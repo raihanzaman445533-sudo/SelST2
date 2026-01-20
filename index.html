@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Kitty Massage</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 100vh;
+                    margin: 0;
+                    background-color: #fce4ec; /* Light pink background */
+                    overflow: hidden; /* Hide overflow for animation */
+                }
+                .container {
+                    text-align: center;
+                    background-color: #fff;
+                    padding: 30px;
+                    border-radius: 15px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+                h1 {
+                    color: #e91e63; /* Pink color for heading */
+                    margin-bottom: 20px;
+                    opacity: 0; /* Start hidden for animation */
+                    transform: translateY(20px); /* Start slightly below for animation */
+                    animation: fadeInUp 1s ease-out forwards;
+                    animation-delay: 0.5s;
+                }
+                p {
+                    color: #333;
+                    font-size: 1.2em;
+                    line-height: 1.6;
+                    opacity: 0; /* Start hidden for animation */
+                    transform: translateY(20px); /* Start slightly below for animation */
+                    animation: fadeInUp 1s ease-out forwards;
+                }
+                p:nth-of-type(1) {
+                    animation-delay: 1s; /* Delay for the first paragraph */
+                }
+                p:nth-of-type(2) {
+                    animation-delay: 1.5s; /* Delay for the second paragraph */
+                }
+    
+                @keyframes fadeInUp {
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>Hello Kitty Massage</h1>
+                <p>
+                    Welcome to your purr-fectly relaxing Hello Kitty massage! 
+                    Let the gentle paws of tranquility ease your stress away.
+                    You deserve this moment of calm and cuteness.
+                </p>
+                <p>
+                    Enjoy a blissful experience filled with warmth and comfort.
+                    Meow!
+                </p>
+            </div></body>
+</html>
